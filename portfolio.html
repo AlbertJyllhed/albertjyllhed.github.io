@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Hem</a></li>
+                    <li><a href="./cv.html">CV</a></li>
+                    <li>
+                        <a href="./portfolio.html" class="activeNav"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li><a href="./other.html">Annat</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Portfolio</h2>
+                <article>
+                    <h3>
+                        <a href="https://github.com/AlbertJyllhed/BankApp"
+                            >Liskov Bank</a
+                        >
+                    </h3>
+                    <img
+                        src="./images/money.png"
+                        alt="Bild på pengar"
+                        class="bannerImg"
+                    />
+                    <p>
+                        Liskov Bank var det första stora grupprojektet som vi
+                        utvecklade under systemutvecklingsutbildningen...
+                    </p>
+                    <button onclick="liskovModal.show()">Mer info</button>
+                </article>
+                <dialog id="liskovModal">
+                    <p>
+                        Liskov Bank var det första stora grupprojektet som vi
+                        utvecklade under systemutvecklingsutbildningen. Det är
+                        en bankapp där användare kan skapa sina egna bankkonton
+                        eller sparkonton med olika valutor. Man kan låna pengar,
+                        sätta in på sina konton eller hämta ut pengarna.
+                        Administratörer kan skapa nya kunder, uppdatera
+                        växelkurserna för olika valutor och låsa upp
+                        kundprofiler.
+                    </p>
+                    <form method="dialog">
+                        <button>Stäng</button>
+                    </form>
+                </dialog>
+                <article>
+                    <h3>
+                        <a
+                            href="https://github.com/AlbertJyllhed/LibraryProgram"
+                            >Bibliotek</a
+                        >
+                    </h3>
+                    <img
+                        src="./images/library.jpg"
+                        alt="Bild på ett bibliotek"
+                        class="bannerImg"
+                    />
+                    <p>
+                        Ett av de första projekten jag utvecklade på Campus
+                        Varberg...
+                    </p>
+                    <button onclick="libraryModal.show()">Mer info</button>
+                </article>
+                <dialog id="libraryModal">
+                    <p>
+                        Ett av de första projekten jag utvecklade på Campus
+                        Varberg. Appen simulerar ett bibliotek där användare kan
+                        låna böcker. Administratörer kan lägga till nya
+                        användare och böcker i biblioteket.
+                    </p>
+                    <form method="dialog">
+                        <button>Stäng</button>
+                    </form>
+                </dialog>
+                <article>
+                    <h3>
+                        <a href="https://github.com/AlbertJyllhed/PragueParking"
+                            >Prague Parking</a
+                        >
+                    </h3>
+                    <img
+                        src="./images/parkingGarage.jpg"
+                        alt="Bild på parkeringsgarage"
+                        class="bannerImg"
+                    />
+                    <p>
+                        Prague Parking är en WinForms applikation som jag
+                        skapade under programmering 2 kursen...
+                    </p>
+                    <button onclick="pragueParking.show()">Mer info</button>
+                </article>
+                <dialog id="pragueParking">
+                    <p>
+                        Prague Parking är en WinForms applikation som jag
+                        skapade under programmering 2 kursen. Programmet
+                        simulerar ett parkeringsgarage som kan ta emot olika
+                        typer av fordon.
+                    </p>
+                    <form method="dialog">
+                        <button>Stäng</button>
+                    </form>
+                </dialog>
+                <article>
+                    <h3>
+                        <a
+                            href="https://albertjyllhed.itch.io/prison-of-the-dead"
+                            >Prison of the Dead</a
+                        >
+                    </h3>
+                    <img
+                        src="./images/potdBanner.png"
+                        alt="Bild från spelet Prison of the Dead"
+                        class="bannerImg"
+                    />
+                    <p>
+                        Prison of the Dead är ett kort actionspel med ett fåtal
+                        pussel...
+                    </p>
+                    <button onclick="prisonOfTheDead.show()">Mer info</button>
+                </article>
+                <dialog id="prisonOfTheDead">
+                    <p>
+                        Prison of the Dead är ett kort actionspel med ett fåtal
+                        pussel. Det var ett spel jag skapade för att utmana mig
+                        själv då jag inte hade utvecklat något i Godot
+                        spelmotorn tidigare. Det tog mig ca. 2 månader att skapa
+                        spelet och tar ungefär 10-20 minuter att spela igenom.
+                    </p>
+                    <form method="dialog">
+                        <button>Stäng</button>
+                    </form>
+                </dialog>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
