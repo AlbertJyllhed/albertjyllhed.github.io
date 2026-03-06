@@ -1,0 +1,36 @@
+{
+    "jobs": [
+        {
+            "title": "First Line Kundsupport, Mediateknik, Varberg",
+            "timeline": "JUNI 2023-MAJ 2024, JANUARI 2025-NU",
+            "description": "Deltidsjobb där jag hjälper kunder med att starta igång internetabonnemang, felsökning av internet, IP-telefoni samt TV tjänster. Jag har lärt mig mycket om kundbemötande och telefonsupport."
+        },
+        {
+            "title": "IT-Tekniker, P.C. Data, Varberg",
+            "timeline": "MAJ 2024-AUGUSTI 2024",
+            "description": "Provanställning på heltid där jag hjälper kunder med alla möjliga IT problem. Jag har jobbat i butiken, tagit telefonsamtal och utfört arbeten hemma hos kund vid behov. Likt Mediateknik har jag lärt mig mycket om kundbemötande men även butiksarbete och mer personlig support."
+        },
+        {
+            "title": "Praktik, Restory / Aveer, Hovås",
+            "timeline": "SEPTEMBER 2022-MARS 2023",
+            "description": "En 6 månader lång praktik där jag fick lära mig en hel del olika saker. Jag lärde mig bland annat mycket om frontend programmering och skapade en hemsida tillsammans med ett team; ABGS.net. Jag utökade även mina kunskaper inom C# och Python under denna tiden och fick prova på att hålla i några Python kurser."
+        }
+    ],
+    "education": [
+        {
+            "title": "Systemutveckling .NET, Campus Varberg",
+            "timeline": "SEPTEMBER 2025-NU",
+            "description": ""
+        },
+        {
+            "title": "Programmering 1 & 2, ABF Vux, Varberg",
+            "timeline": "DECEMBER 2024-FEBRUARI 2025",
+            "description": "Förberedande kurser för att komma in på systemutvecklingsutbildningen som jag nu går."
+        },
+        {
+            "title": "Bachelor of Science in Media Technology, Blekinge",
+            "timeline": "SEPTEMBER 2017-JUNI 2020",
+            "description": "Under min tid på BTH utforskade jag intressanta och kreativa spelidéer och skapade projekt tillsammans med mina klasskamrater. Vi undersökte hur spel skapas och hur mekaniker är sammanknutna med det visuella för att skapa unika upplevelser. Några av spelen som jag har skapat ligger uppe på min itch.io sida."
+        }
+    ]
+}
