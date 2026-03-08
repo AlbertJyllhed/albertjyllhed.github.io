@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: "Blue Winter";
-    src: url(./fonts/Blue\ Winter.ttf);
+    src: url(../fonts/Blue\ Winter.ttf);
 }
 
 @font-face {
     font-family: "Comfortaa";
-    src: url(./fonts/Comfortaa-Regular.ttf);
+    src: url(../fonts/Comfortaa-Regular.ttf);
 }
 
 body {

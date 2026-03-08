@@ -2,7 +2,7 @@ const columns = document.querySelector(".columns");
 
 async function getData() {
     try {
-        const response = await fetch("../cv.json");
+        const response = await fetch("../json/cv.json");
         if (!response.ok) {
             throw new Error("Kunde inte hämta data: " + response.statusText);
         }
