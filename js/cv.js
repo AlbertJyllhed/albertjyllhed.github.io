@@ -20,13 +20,13 @@ getData();
 
 function showJobs(jobs) {
     const jobsElement = document.getElementById("jobsElement");
-    jobsElement.innerHTML = "<h2>Arbetslivserfarenhet</h2>";
+    jobsElement.classList.add("column");
 
     jobs.forEach((job) => {
         const jobElement = document.createElement("div");
 
-        jobElement.innerHTML = `<article><h3>${job.title}</h3>
-        <h3>${job.timeline}</h3><p>${job.description}</p></article>`;
+        jobElement.innerHTML = `<div class="container"><h3>${job.title}</h3>
+        <h3>${job.timeline}</h3><p>${job.description}</p></div>`;
 
         jobsElement.appendChild(jobElement);
     });
@@ -34,13 +34,13 @@ function showJobs(jobs) {
 
 function showEducation(education) {
     const schoolsElement = document.getElementById("educationElement");
-    schoolsElement.innerHTML = "<h2>Utbildningar</h2>";
+    schoolsElement.classList.add("column");
 
     education.forEach((e) => {
         const schoolElement = document.createElement("div");
 
-        schoolElement.innerHTML = `<article><h3>${e.title}</h3>
-        <h3>${e.timeline}</h3><p>${e.description}</p></article>`;
+        schoolElement.innerHTML = `<div class="container"><h3>${e.title}</h3>
+        <h3>${e.timeline}</h3><p>${e.description}</p></div>`;
 
         schoolsElement.appendChild(schoolElement);
     });

@@ -1,5 +1,6 @@
 const reposURL = "https://api.github.com/users/AlbertJyllhed/repos";
-const sectionElement = document.querySelector("section");
+const portfolioElement = document.getElementById("portfolioElement");
+const loaderElement = document.getElementById("loader");
 
 async function getData() {
     try {
@@ -19,19 +20,23 @@ async function getData() {
 getData();
 
 function displayRepos(repos) {
-    sectionElement.innerHTML = "<h2>Portfolio</h2>";
+    portfolioElement.classList.add("column");
+    loaderElement.style.display = "none";
 
     repos.forEach((repo) => {
+        if (!repo.description) {
+            return;
+        }
         const repoElement = document.createElement("div");
 
-        repoElement.innerHTML = `<h3>
-        <a href="${repo.html_url}">${repo.name}</a></h3>
-        <p>${repo.description}</p>`;
+        repoElement.innerHTML = `<div class="container"><h3>
+        <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+        </h3><p>${repo.description}</p></div>`;
 
-        sectionElement.appendChild(repoElement);
+        portfolioElement.appendChild(repoElement);
     });
 }
 
 function showError(error) {
-    sectionElement.innerHTML = `<p>An error occurred: ${error.message}</p>`;
+    portfolioElement.innerHTML = `<p>An error occurred: ${error.message}</p>`;
 }
