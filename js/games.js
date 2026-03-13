@@ -1,7 +1,8 @@
-const baseURL = "https://itch.io/api/1/";
-const apiKey = "auXF9kqhZuOqVNSOc3yGgi06sEubaTbevuKdj66e";
+const baseURL = "https://corsproxy.io/?url=https://itch.io/api/1/";
+const apiKey = "2fncPVySJ7jw6E2TNrjNAF0MJFv0WkexhB138aWu";
 
 const titleElement = document.querySelector("h2");
+const loaderElement = document.getElementById("loader");
 
 async function getData() {
     try {
@@ -18,16 +19,24 @@ async function getData() {
     }
 }
 
-function showGames(games) {
+function showGames(data) {
     const gamesElement = document.getElementById("gamesElement");
     gamesElement.classList.add("column");
+    loaderElement.style.display = "none";
 
-    games.forEach((game) => {
+    data.games.forEach((game) => {
+        if (!game.published_at) {
+            return;
+        }
         const gameElement = document.createElement("div");
         gameElement.classList.add("container");
         gameElement.classList.add("hover-container");
+        gameElement.addEventListener("click", () => {
+            window.open(game.url, "_blank").focus();
+        });
 
-        gameElement.innerHTML = ``;
+        gameElement.innerHTML = `<img src="${game.cover_url}" /><h3>${game.title}</h3>
+        <h4>Released ${game.published_at}</h4><p>${game.short_text}</p>`;
 
         gamesElement.appendChild(gameElement);
     });
