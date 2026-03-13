@@ -16,8 +16,6 @@ async function getData() {
     }
 }
 
-getData();
-
 function showJobs(jobs) {
     const jobsElement = document.getElementById("jobsElement");
     jobsElement.classList.add("column");
@@ -25,6 +23,7 @@ function showJobs(jobs) {
     jobs.forEach((job) => {
         const jobElement = document.createElement("div");
         jobElement.classList.add("container");
+        jobElement.classList.add("hover-container");
 
         jobElement.innerHTML = `<h3>${job.title}</h3>
         <h4>${job.timeline}</h4><p>${job.description}</p>`;
@@ -40,6 +39,7 @@ function showEducation(education) {
     education.forEach((e) => {
         const schoolElement = document.createElement("div");
         schoolElement.classList.add("container");
+        schoolElement.classList.add("hover-container");
 
         schoolElement.innerHTML = `<h3>${e.title}</h3>
         <h4>${e.timeline}</h4><p>${e.description}</p>`;
@@ -52,3 +52,5 @@ function showError(error) {
     const courseListElement = document.querySelector(".columns");
     courseListElement.innerHTML = `<p class="error">Ett fel inträffade: ${error.message}</p>`;
 }
+
+getData();

@@ -64,6 +64,11 @@ a {
 
 a:hover {
     color: white;
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
 }
 
 .activeNav {
@@ -78,12 +83,14 @@ section {
 }
 
 .mainImg {
+    background-color: white;
     object-fit: cover;
     object-position: 0% 10%;
     width: 20dvw;
     height: 20dvw;
     margin: 1rem 1rem -1.5rem;
     border: 2px solid white;
+    box-sizing: border-box;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -136,6 +143,23 @@ section {
 
 .container h3 {
     color: #fca311;
+}
+
+.hover-container {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.hover-container:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
 }
 
 /* button {
