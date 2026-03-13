@@ -28,10 +28,11 @@ function displayRepos(repos) {
             return;
         }
         const repoElement = document.createElement("div");
+        repoElement.classList.add("container");
 
-        repoElement.innerHTML = `<div class="container"><h3>
+        repoElement.innerHTML = `<h3>
         <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-        </h3><p>${repo.description}</p></div>`;
+        </h3><p>${repo.description}</p>`;
 
         portfolioElement.appendChild(repoElement);
     });

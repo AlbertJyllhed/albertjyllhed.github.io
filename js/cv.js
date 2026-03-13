@@ -24,9 +24,10 @@ function showJobs(jobs) {
 
     jobs.forEach((job) => {
         const jobElement = document.createElement("div");
+        jobElement.classList.add("container");
 
-        jobElement.innerHTML = `<div class="container"><h3>${job.title}</h3>
-        <h3>${job.timeline}</h3><p>${job.description}</p></div>`;
+        jobElement.innerHTML = `<h3>${job.title}</h3>
+        <h4>${job.timeline}</h4><p>${job.description}</p>`;
 
         jobsElement.appendChild(jobElement);
     });
@@ -38,9 +39,10 @@ function showEducation(education) {
 
     education.forEach((e) => {
         const schoolElement = document.createElement("div");
+        schoolElement.classList.add("container");
 
-        schoolElement.innerHTML = `<div class="container"><h3>${e.title}</h3>
-        <h3>${e.timeline}</h3><p>${e.description}</p></div>`;
+        schoolElement.innerHTML = `<h3>${e.title}</h3>
+        <h4>${e.timeline}</h4><p>${e.description}</p>`;
 
         schoolsElement.appendChild(schoolElement);
     });
