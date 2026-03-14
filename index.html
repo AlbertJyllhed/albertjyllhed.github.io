@@ -4,13 +4,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/icons.css" />
+        <script
+            src="https://kit.fontawesome.com/860bdaf46c.js"
+            crossorigin="anonymous"
+        ></script>
         <script src="./js/eastereggs.js" defer></script>
         <title>AlbertJyllhed</title>
     </head>
     <body>
         <header>
             <h1>Albert Jyllhed</h1>
-            <nav>
+            <i
+                class="fa-solid fa-bars"
+                id="nav-icon"
+                onclick="toggleMobileNav()"
+            ></i>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="index.html" class="activeNav">Hem</a></li>
                     <li><a href="./html/cv.html">CV</a></li>
@@ -20,6 +30,15 @@
                 </ul>
             </nav>
         </header>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="activeNav">Hem</a></li>
+                <li><a href="./html/cv.html">CV</a></li>
+                <li><a href="./html/portfolio.html">Portfolio</a></li>
+                <li><a href="./html/games.html">Spel</a></li>
+                <li><a href="./html/contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
         <main>
             <section>
                 <h2>Hej, mitt namn är Albert Jyllhed.</h2>
@@ -28,7 +47,7 @@
                     alt="Bild på Albert"
                     class="mainImg"
                 />
-                <div class="container">
+                <div class="container" id="main-container">
                     <p>
                         Jag bor i centrala Varberg tillsammans med min fru.
                         Tidigare har jag studerat speldesign på högskolenivå i

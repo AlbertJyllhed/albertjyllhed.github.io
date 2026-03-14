@@ -57,6 +57,15 @@ function triggerEasterEgg() {
     audioElement.play();
 }
 
+function toggleMobileNav() {
+    const mobileNav = document.querySelector(".mobile-nav");
+    if (mobileNav.style.display === "block") {
+        mobileNav.style.display = "none";
+    } else {
+        mobileNav.style.display = "block";
+    }
+}
+
 steveElement.addEventListener("animationend", () => {
     overlayElements[1].style.display = "none";
 });
