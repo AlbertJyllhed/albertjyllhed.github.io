@@ -352,4 +352,7 @@ video {
     #main-container {
         width: 80%;
     }
+    h2 {
+        font-size: 1em;
+    }
 }

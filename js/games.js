@@ -1,4 +1,4 @@
-const baseURL = "https://corsproxy.io/?url=https://itch.io/api/1/";
+const baseURL = "https://proxy.corsfix.com/?url=https://itch.io/api/1/";
 const apiKey = "2fncPVySJ7jw6E2TNrjNAF0MJFv0WkexhB138aWu";
 
 const titleElement = document.querySelector("h2");
