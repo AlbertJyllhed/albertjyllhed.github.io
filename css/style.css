@@ -212,6 +212,10 @@ p {
     padding: 0.5rem;
 }
 
+.centered-text {
+    text-align: center;
+}
+
 .games-section {
     width: 100%;
 }
