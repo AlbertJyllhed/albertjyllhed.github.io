@@ -375,6 +375,10 @@ video {
     #nav-icon {
         display: block;
     }
+    .mainImg {
+        height: 60vw;
+        width: 60vw;
+    }
     .column {
         grid-template-columns: auto;
     }
