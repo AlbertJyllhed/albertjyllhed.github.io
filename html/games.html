@@ -4,14 +4,22 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/style.css" />
-        <script src="../js/games.js" defer></script>
         <script src="../js/eastereggs.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/860bdaf46c.js"
+            crossorigin="anonymous"
+        ></script>
         <title>Spel</title>
     </head>
     <body>
         <header>
             <h1>Spel</h1>
-            <nav>
+            <i
+                class="fa-solid fa-bars"
+                id="nav-icon"
+                onclick="toggleMobileNav()"
+            ></i>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="../index.html">Hem</a></li>
                     <li><a href="./cv.html">CV</a></li>
@@ -21,11 +29,88 @@
                 </ul>
             </nav>
         </header>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="./cv.html">CV</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./games.html" class="activeNav">Spel</a></li>
+                <li><a href="./contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
         <main>
-            <section>
+            <section class="games-section">
                 <h2>Spel</h2>
-                <div id="loader"></div>
-                <div id="gamesElement"></div>
+                <div class="column">
+                    <div class="container">
+                        <iframe
+                            frameborder="0"
+                            src="https://itch.io/embed/2022024?linkback=true"
+                            width="552"
+                            height="167"
+                            ><a href="https://albertjyllhed.itch.io/alien-arena"
+                                >Alien Arena by AlbertJyllhed</a
+                            ></iframe
+                        >
+                    </div>
+                    <div class="container">
+                        <iframe
+                            frameborder="0"
+                            src="https://itch.io/embed/657024?linkback=true"
+                            width="552"
+                            height="167"
+                            ><a href="https://morknox.itch.io/fornheim"
+                                >Fornheim by morknox</a
+                            ></iframe
+                        >
+                    </div>
+                    <div class="container">
+                        <iframe
+                            frameborder="0"
+                            src="https://itch.io/embed/429418?linkback=true"
+                            width="552"
+                            height="167"
+                            ><a href="https://albertjyllhed.itch.io/gnarl"
+                                >Gnarl by AlbertJyllhed, LukasN</a
+                            ></iframe
+                        >
+                    </div>
+                    <div class="container">
+                        <iframe
+                            frameborder="0"
+                            src="https://itch.io/embed/1561385?linkback=true"
+                            width="552"
+                            height="167"
+                            ><a
+                                href="https://albertjyllhed.itch.io/prison-of-the-dead"
+                                >Prison of the Dead by AlbertJyllhed</a
+                            ></iframe
+                        >
+                    </div>
+                    <div class="container">
+                        <iframe
+                            frameborder="0"
+                            src="https://itch.io/embed/4206694?linkback=true"
+                            width="552"
+                            height="167"
+                            ><a
+                                href="https://albertjyllhed.itch.io/substitute-santa"
+                                >Substitute Santa by AlbertJyllhed</a
+                            ></iframe
+                        >
+                    </div>
+                    <div class="container">
+                        <iframe
+                            frameborder="0"
+                            src="https://itch.io/embed/503634?linkback=true"
+                            width="552"
+                            height="167"
+                            ><a href="https://cecilquiroga.itch.io/treenimals"
+                                >Treenimals by cecilquiroga</a
+                            ></iframe
+                        >
+                    </div>
+                </div>
             </section>
             <div class="overlay">
                 <div class="centerContainer">

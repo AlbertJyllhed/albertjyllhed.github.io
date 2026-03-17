@@ -110,6 +110,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    margin: auto;
 }
 
 .mainImg {
@@ -151,7 +153,7 @@ section {
     border: 2px solid white;
     padding: 1rem;
     margin: 1rem;
-    width: 20vw;
+    min-width: 20vw;
     min-height: 8rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -210,13 +212,25 @@ p {
     padding: 0.5rem;
 }
 
+.games-section {
+    width: 100%;
+}
+
+iframe {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(29, 27, 58, 0.8), rgba(72, 41, 107, 0.8));
     border-top: 2px solid white;
-    width: 100vw;
+    width: 100%;
     height: 6rem;
     z-index: 1;
     box-shadow: 0 -3px 3px white;
@@ -305,6 +319,18 @@ video {
     -webkit-animation: fadeOut 0.5s;
 }
 
+.fa-solid {
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+}
+
 @keyframes fadeOut {
     25% {
         transform: scale3d(1.2, 1.2, 1.2);
@@ -335,6 +361,9 @@ video {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    section {
+        width: 100vw;
     }
     .desktop-nav {
         display: none;
