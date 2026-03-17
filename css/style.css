@@ -335,6 +335,10 @@ video {
     margin: 10px;
 }
 
+#qr {
+    height: 100%;
+}
+
 @keyframes fadeOut {
     25% {
         transform: scale3d(1.2, 1.2, 1.2);
